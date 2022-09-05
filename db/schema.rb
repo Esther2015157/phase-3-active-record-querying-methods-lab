@@ -11,11 +11,12 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2022_09_05_151036) do
-    create_table "movies", force: :cascade do |t|
-        t.string "title"
-        t.integer "release_date"
-        t.string "director"
-        t.string "lead"
-        t.boolean "in_theaters"
+    create_table "shows", force: :cascade do |t|
+        t.string "name"
+        t.string "network"
+        t.string "day"
+        t.integer "rating"
+        t.string "season"
       end
-end
+    end
+
